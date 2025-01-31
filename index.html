@@ -36,20 +36,17 @@
 </head>
 
 <body class="font-sora">
-    <!-- <nav>
-        <div class="flex items-center gap-2">
-            <img src="c1-assets/logo-header.png" alt="">
-            <p class="text-2xl">Browse<span class="text-secondary">4</span>Pets</p>
-        </div>
-    </nav> -->
     <header class="container mx-auto">
-        <div class="navbar bg-background">
-            <div class="navbar-start">
-              <a class="btn btn-ghost text-xl">
+        <div class="navbar bg-background flex items-center justify-between">
+            <!-- Left Logo -->
+            <div class="navbar-start flex items-center">
+              <a class="btn btn-ghost text-xl flex items-center space-x-2">
                 <img src="c1-assets/logo-header.png" alt="">
                 <p class="text-2xl">Browse<span class="text-yellow">4</span>Pets</p>
               </a>
             </div>
+
+            <!-- Center Nav for Large Screen -->
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li><a>Find a pet</a></li>
@@ -57,11 +54,15 @@
                 <li><a>Contact us</a></li>
               </ul>
             </div>
+
+            <!-- Right Buttons for Large Screen -->
             <div class="navbar-end hidden lg:flex">
                 <button class="btn border-yellow bg-white h-5 mr-2">Login</button>
                 <button class="btn bg-yellow">Register</button>
             </div>
-            <div class="flex-auto lg:hidden">
+
+            <!-- Right Menu for Small Screen -->
+            <div class="navbar-end lg:hidden">
                 <button class="btn btn-square btn-ghost">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
